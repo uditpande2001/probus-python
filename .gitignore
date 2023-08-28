@@ -1,0 +1,13 @@
+#ignore logs files
+*.log
+#ignroe csv files
+*.csv
+#ignore generated files
+*.pyc
+#ignore venv
+venv/
+.env/
+#ignore text files
+*.txt
+#ignore json files
+*.json

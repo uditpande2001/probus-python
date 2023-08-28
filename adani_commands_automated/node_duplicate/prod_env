@@ -1,0 +1,5 @@
+--host=nms-wirepass-prod.adanielectricity.com
+--port=8883
+--username=mqttmasteruser
+--password=ENwQRmAOoCKG2QtAqYWNATqWKINU0Z
+--network=256

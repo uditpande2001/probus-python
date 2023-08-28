@@ -1,0 +1,12 @@
+--host=nms-wirepass-prod.adanielectricity.com
+--port=8883
+--username=mqttmasteruser
+--password=ENwQRmAOoCKG2QtAqYWNATqWKINU0Z
+--network=256
+--gateway_id=867881049742773
+--sink_id=sink4
+--node_address=668730
+--new_network_address=8798830
+--new_network_channel=2
+--activation_delay_s=120
+--delay_s=180

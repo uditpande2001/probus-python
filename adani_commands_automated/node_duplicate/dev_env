@@ -1,0 +1,7 @@
+--host=nms-dev.adanielectricity.com
+--port=8883
+--username=mqttmasteruser
+--password=urDh7h5pRAwTcpehZCKp4DTvaVWVc
+--network=84570
+--gateways=861261056661925
+--delay_s=300
