@@ -46,8 +46,6 @@ def start_consuming():
                 os.mkdir(file_path)
 
 
-
-
             if profile_type == 'Event_Profile':
 
                 json_obj = json.dumps(messages.value, indent=4)

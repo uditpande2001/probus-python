@@ -167,19 +167,22 @@ if __name__ == '__main__':
         t.start()
 
     time.sleep(5)
-    meter_no = input("Enter the meter no ")
-    meter_no = meter_no.upper().replace(" ", "")
 
-    nodes = get_db_data(meter_no)
+    while True:
+        meter_no = input("Enter the meter no ")
+        meter_no = meter_no.upper().replace(" ", "")
 
-    command_id = input("Enter the command ID ")
-    command_id = command_id.replace(" ", "")
+        nodes = get_db_data(meter_no)
 
-    flag = input("enter y to send the command ")
-    if flag == 'y' or flag == 'Y':
-        connect(nodes[0], command_id)
-    else:
-        print("wrong input exit the program ")
+        command_id = input("Enter the command ID ")
+        command_id = command_id.replace(" ", "")
+
+        flag = input("enter y to send the command any other key to cancel ")
+        if flag == 'y' or flag == 'Y':
+            connect(nodes[0], command_id)
+        else:
+            print("wrong input try again \n ")
+
 
     for t in threads:
         t.join()

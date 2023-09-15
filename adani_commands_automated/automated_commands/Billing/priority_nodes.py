@@ -32,7 +32,7 @@ if not os.path.exists(Response_DIRECTORY_2):
 # -------------------------------------------------------------------------------------------
 now = datetime.now()
 billing_date_time = now.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
-diag_time = now - timedelta(hours=4)
+diag_time = now - timedelta(minutes=45)
 print(billing_date_time, diag_time)
 
 # importing priority nodes from given csv:
@@ -152,7 +152,7 @@ def billing(nodes):
 
                 except Exception as error:
                     print(error)
-            time.sleep(15)
+            time.sleep(60)
         if count == num_elements:
             print('Command send to all required nodes ')
             file.close()

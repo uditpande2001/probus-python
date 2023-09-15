@@ -148,6 +148,7 @@ def billing(nodes):
 
                 except Exception as error:
                     print(error)
+
             time.sleep(60)
         if count == num_elements:
             print('Command send to all the required nodes ')

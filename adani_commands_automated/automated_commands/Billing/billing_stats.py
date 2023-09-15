@@ -92,7 +92,7 @@ def get_db_data():
             temp.append(result[0])
 
         print(
-            f" priority nodes (11776) - {temp[1]}  ,  overall - {temp[0]} - -{datetime.now().replace(second=0, microsecond=0)}")
+            f" priority nodes (13712) - {temp[1]}  ,  overall - {temp[0]} - -{datetime.now().replace(second=0, microsecond=0)}")
 
 
 

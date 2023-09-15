@@ -132,10 +132,6 @@ def log_viwer(hesstr, nodeid):
 
             data_to_insert.put(log_response)
 
-
-
-
-
 def get_data():
     query = """select node_id, hex from 
                 rf_log r 

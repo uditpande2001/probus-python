@@ -103,12 +103,8 @@ def event_consumer():
                 # print(messages.value)
                 data_queue.put(messages.value)
 
-
-
             else:
                 print('no subType in message')
-
-
 
 
 if __name__ == '__main__':

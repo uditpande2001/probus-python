@@ -5,7 +5,7 @@ import csv
 import os
 import logging
 from datetime import date,datetime
-from automated_commands.master.master_file import event_array
+
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(module)s - %(lineno)d - %(message)s',
                     datefmt='%Y-%m-%d %H:%M:%S')
@@ -21,7 +21,7 @@ if not os.path.exists(Response_DIRECTORY):
 def start_consuming():
     consumer = KafkaConsumer(
         bootstrap_servers='10.127.2.7',
-        auto_offset_reset='latest',
+        auto_offset_reset='earliest',
         value_deserializer=lambda m: json.loads(m.decode('utf-8'))
 
     )
